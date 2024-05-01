@@ -1,0 +1,19 @@
+
+
+  
+
+<nav>
+<div *ngIf="isLogin()">
+    <h3>Hi, {{form.data.fname}} {{form.data.lname}}</h3> |
+    <a href="/user"><b>Add User</b></a> |
+    <a href="/userlist"><b>User List</b></a>|
+    <a (click)="logout()">logout</a>
+</div>
+<div *ngIf="!isLogin()">
+    <h3>Hi, Guest</h3>
+
+    <a class="nav-link" [routerLink]="['/login']" >login</a>
+</div>
+<hr>
+
+</nav>

@@ -1,0 +1,33 @@
+
+<app-navbar></app-navbar>
+<form class="s" > 
+    <div>
+        <h1  style="text-align: center;">LOGIN</h1>
+        <tr>
+            <td *ngIf="form.message != null">
+                <h3>{{form.message}}</h3>
+            </td>
+        </tr>
+
+ 
+    <table>
+      
+    
+        <tr>
+            <th>Login ID: </th>
+            <td> <input type="text" [(ngModel)]="form.loginId" name="loginId" /></td>
+        </tr>
+        <tr>
+            <th>Password: </th>
+            <td> <input type="text" [(ngModel)]="form.password" name="password" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td> <button (click)="login()">signIn</button> 
+             <button><a href="signup" style="color: black; text-decoration: none;">signup</a></button> </td>
+        </tr>
+    </table>
+</div>
+</form>
+
+<app-footer></app-footer>

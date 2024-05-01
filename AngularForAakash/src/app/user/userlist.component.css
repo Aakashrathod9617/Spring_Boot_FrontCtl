@@ -1,0 +1,16 @@
+/* full-page-table.component.css */
+.full-page-table {
+    width: 100%; /* Cover full width of the page */
+    border-collapse: collapse; /* Collapse table borders */
+  }
+  
+  .full-page-table th, .full-page-table td {
+    border: 1px solid black; /* Border for table cells */
+    padding: 8px; /* Padding for content */
+    text-align: center; /* Align text to the left */
+  }
+  
+  .full-page-table th {
+    background-color: #f2f2f2; /* Light gray background for table headers */
+  }
+  
